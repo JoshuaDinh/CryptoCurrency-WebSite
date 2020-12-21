@@ -6,7 +6,7 @@ import DataUsageIcon from "@material-ui/icons/DataUsage";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import AnnouncementIcon from "@material-ui/icons/Announcement";
-import AccountBalanceWalletIcon from "@material-ui/icons/AccountBalanceWallet";
+// import AccountBalanceWalletIcon from "@material-ui/icons/AccountBalanceWallet";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
@@ -49,14 +49,14 @@ const Sidebar = () => {
             Icon={HomeIcon}
           />
         </Link>{" "}
-        <Link onClick={() => setSelected("DataTable")} to="/Data">
+        {/* <Link onClick={() => setSelected("DataTable")} to="/Data">
           <SidebarOption
             open={open}
             selected={selected === "DataTable"}
             title="Data Table"
             Icon={DataUsageIcon}
           />
-        </Link>{" "}
+        </Link>{" "} */}
         <Link onClick={() => setSelected("News")} to="/News">
           <SidebarOption
             open={open}
@@ -78,7 +78,7 @@ const Sidebar = () => {
           <SidebarOption
             open={open}
             selected={selected === "myAccount"}
-            title="My Account"
+            title="Account"
             Icon={AccountBoxIcon}
           />
         </Link>

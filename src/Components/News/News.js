@@ -39,9 +39,11 @@ const News = () => {
   return (
     <div className="news">
       {loading ? (
-        <div className="news__progress-bar">
+        <div className="news__progress-bar-container">
           <p>Loading...</p>
-          <LinearProgress />
+          <div className="news__progress-bar">
+            <LinearProgress />
+          </div>
         </div>
       ) : (
         news.map((news) => {

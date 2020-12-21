@@ -24,7 +24,6 @@ const SidebarOption = ({
           }
         ></Icon>
       )}
-      {img && <img className="sidebarOption__img" src={img} />}
       {open && title}
     </div>
   );

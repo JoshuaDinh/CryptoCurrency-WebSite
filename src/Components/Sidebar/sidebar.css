@@ -17,34 +17,22 @@
   color: white;
 }
 
-.sidebar__logo {
-  height: 70px;
-  padding: 10px;
-  margin-right: auto;
-}
-
 .sidebar__title {
-  margin-left: 10px;
-  padding: 5px;
   font-size: 20px;
   font-family: "Italianno", cursive;
-}
-
-.sidebar > img {
-  height: 200px;
-  width: 200px;
 }
 
 /* ---SidebarOption--- */
 .sidebarOption {
   color: whitesmoke;
-  height: 40px;
+  height: 60px;
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
   padding: 15px;
+  transition: 0.4s ease-in-out;
+  margin-top: 25px;
 }
 
 .sidebarOption:hover,
@@ -57,22 +45,8 @@
   justify-content: center;
 }
 
-.sidebarOption {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  transition: 0.4s ease-in-out;
-  margin-top: 25px;
-}
-
 .sidebarOption__open {
   border-radius: 20px 0 0 20px;
-}
-
-.sidebarOption__img {
-  width: 50px;
-  object-fit: contain;
-  align-items: center;
 }
 
 .sidebarOption__arrowIcon {
