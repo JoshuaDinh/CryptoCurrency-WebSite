@@ -1,0 +1,54 @@
+img {
+  width: 20px;
+}
+
+.table__container {
+  overflow: scroll;
+  height: 91vh;
+  border-top: 5px solid #d27d0d;
+  width: 45% !important;
+  margin-left: 10px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
+  -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.table__cell {
+  color: rgb(22, 35, 54) !important;
+  border-bottom: 1px solid rgb(22, 35, 54) !important;
+}
+
+.table__cell-font {
+  color: rgb(22, 35, 54) !important;
+}
+
+/* ---------------------------Charts */
+
+.table__chart {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie__chart:hover,
+.table__chart:hover {
+  border-top: 6px solid #d27d0d;
+  border-bottom: 1px solid #d27d0d;
+  border-right: 1px solid #d27d0d;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
+  -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
+}
+.pie__chart,
+.table__chart {
+  border-top: 6px solid #162336;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+}

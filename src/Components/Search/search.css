@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.form__inputContainer {
+  padding: 9px;
+  width: 100%;
+  background: #162336;
+  display: flex;
+  justify-content: center;
+}
+
+.form__inputContainer > input {
+  width: 60%;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 0 5px;
+  border-radius: 0 20px 20px 0;
+}
+
+.form__icon {
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+}
+
+.form__menu {
+  display: none;
+  color: white;
+}

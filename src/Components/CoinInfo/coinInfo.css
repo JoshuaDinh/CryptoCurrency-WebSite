@@ -1,0 +1,80 @@
+.coinInfo {
+  width: 22%;
+  height: 130px;
+  letter-spacing: 2px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
+  -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
+}
+
+.coinInfo__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.coinInfo__content > h2 {
+  display: flex;
+  justify-content: center;
+  width: 140px;
+  color: #162336;
+}
+
+.coinInfo__highLow {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 10px;
+}
+
+.coinInfo__highLow > p:first-child {
+  color: red;
+}
+.coinInfo__highLow > p:last-child {
+  color: green;
+}
+.coinInfo--selected {
+  border-top: 2px solid rgb(210, 125, 13);
+}
+
+.coinInfo__title {
+  color: grey;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.selected {
+  color: blue;
+}
+
+.title__dailyData {
+  font-size: 120px;
+  color: grey;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.MuiCircularProgress-colorPrimary {
+  color: #162336 !important;
+}
+
+@media screen and (max-width: 1405px) {
+  .coinInfo {
+    width: 100vw;
+  }
+}
