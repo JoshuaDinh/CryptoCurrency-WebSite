@@ -4,10 +4,11 @@ img {
 
 .table__container {
   overflow: scroll;
-  height: 91vh;
+  height: 88vh;
   border-top: 5px solid #d27d0d;
   width: 45% !important;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-top: 20px;
   -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
   -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
   box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;

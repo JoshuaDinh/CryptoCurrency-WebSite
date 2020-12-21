@@ -12,6 +12,7 @@ import Sidebar from "../src/Components/Sidebar/Sidebar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import SignUp from "./Components/SignUp/SignUp";
 import Exchanges from "./Components/Exchanges/Exchanges";
+import Account from "./Components/Account/Account";
 import AllTimeData from "./Components/AllTimeHigh/AllTimeData";
 import linegraph from "./images/linegraph.svg";
 import news from "./images/news.svg";
@@ -288,14 +289,16 @@ function App() {
             <div className="app__exchanges">
               <h1>Top Exchanges by Trust Score </h1>
               <hr></hr>
-              <Exchanges />{" "}
+              <Exchanges />
             </div>
           </Route>
           ;
           {/* /* <------------------------------------MyAccount---------------------------------------------> */}
           <Route path="/MyAccount">
             {" "}
-            <div className="app__myAccount">account</div>
+            <div className="app__myAccount">
+              <Account />
+            </div>
           </Route>
           ;
           {/* /* <------------------------------------SignUp---------------------------------------------> */}
