@@ -1,6 +1,6 @@
 import React from "react";
 import "./account.css";
-import Settings from "../Settings/Settings";
+import Settings from "../Account/Settings/Settings";
 
 const Account = () => {
   return (

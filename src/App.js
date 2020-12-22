@@ -296,7 +296,7 @@ function App() {
           {/* /* <------------------------------------MyAccount---------------------------------------------> */}
           <Route path="/MyAccount">
             {" "}
-            <div className="app__myAccount">
+            <div className="app__account">
               <Account />
             </div>
           </Route>
