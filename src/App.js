@@ -6,13 +6,15 @@ import TableData from "./Components/Table/TableData";
 import Search from "./Components/Search/Search";
 import CoinInfo from "./Components/CoinInfo/CoinInfo";
 import LineGraph from "./Components/LineGraph/LineGraph";
+import Settings from "./Components/Settings/Settings";
+import Profile from "./Components/Profile/Profile";
 import { LinearProgress } from "@material-ui/core";
 import News from "./Components/News/News";
 import Sidebar from "../src/Components/Sidebar/Sidebar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import SignUp from "./Components/SignUp/SignUp";
 import Exchanges from "./Components/Exchanges/Exchanges";
-import Account from "./Components/Account/Account";
+// import Account from "./Components/Account/Account";
 import AllTimeData from "./Components/AllTimeHigh/AllTimeData";
 import linegraph from "./images/linegraph.svg";
 import news from "./images/news.svg";
@@ -263,9 +265,9 @@ function App() {
           ;
           {/* /* <------------------------------------MyAccount---------------------------------------------> */}
           <Route path="/MyAccount">
-            {" "}
             <div className="app__account">
-              <Account />
+              <Settings />
+              <Profile />
             </div>
           </Route>
           ;

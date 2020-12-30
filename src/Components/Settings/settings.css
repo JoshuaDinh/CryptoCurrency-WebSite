@@ -1,6 +1,7 @@
 .settings {
   width: 100%;
   height: 7%;
+  margin-bottom: 7%;
   color: white;
   border-top: 1px solid white;
   display: flex;
@@ -14,8 +15,8 @@
 .settings__selection {
   border-radius: 25px;
   background: rgb(255, 255, 255, 0.5);
-  width: 15%;
-  padding: 0.5%;
+  width: 12%;
+  padding: 0.4%;
   text-align: center;
   cursor: pointer;
 }

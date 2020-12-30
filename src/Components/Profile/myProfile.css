@@ -1,0 +1,40 @@
+.myProfile {
+  display: grid;
+  border: 1px solid green;
+}
+
+.myProfile__input {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  border: 1px solid orange;
+  padding: 2%;
+}
+.myProfile__input > input {
+  padding: 1.5%;
+}
+
+.myProfile__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  border: 1px solid yellow;
+  width: 33%;
+}
+
+.avatar__icon {
+  font-size: 5em !important;
+  color: rgba(114, 114, 114, 0.7) !important;
+}
+
+.avatar__title > p {
+  font-size: 0.8rem;
+}
+
+.avatar__upload-button {
+  padding: 3%;
+  width: 33%;
+  background-color: white;
+  border: 1px solid grey;
+}
