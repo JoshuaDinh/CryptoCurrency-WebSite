@@ -1,0 +1,40 @@
+.personalDetails {
+  display: grid;
+  margin-top: 5%;
+}
+
+.personalDetails__form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.personalDetails__form > input {
+  padding: 2.3%;
+}
+.personalDetails__form > label {
+  margin-top: 5%;
+}
+
+.myProfile__save-button {
+  padding: 2.6%;
+  background-color: #1652f0;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 20%;
+  border-radius: 5px;
+  margin-top: 4%;
+}
+
+.personalDetails__dualInput {
+  margin-top: 2%;
+  display: flex;
+}
+
+.pesonalDetails__dualInput-container {
+  display: grid;
+  width: 100%;
+}
+.pesonalDetails__dualInput-container > input {
+  padding: 3%;
+}

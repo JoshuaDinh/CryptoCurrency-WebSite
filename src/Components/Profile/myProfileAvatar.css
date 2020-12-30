@@ -1,0 +1,23 @@
+.myProfile__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  width: 33%;
+}
+
+.avatar__icon {
+  font-size: 5em !important;
+  color: rgba(114, 114, 114, 0.7) !important;
+}
+
+.avatar__title > p {
+  font-size: 0.8rem;
+}
+
+.avatar__upload-button {
+  padding: 3%;
+  width: 33%;
+  background-color: white;
+  border: 1px solid grey;
+}
