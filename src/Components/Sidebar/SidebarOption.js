@@ -4,7 +4,6 @@ import "./sidebar.css";
 const SidebarOption = ({
   title,
   Icon,
-  img,
   selected,
   open,
   openSidebar,

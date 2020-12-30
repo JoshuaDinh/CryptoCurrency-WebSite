@@ -1,16 +1,15 @@
 import React from "react";
 import "./settings.css";
+import SettingsSelection from "./SettingsSelection";
 
 const Settings = () => {
   return (
     <div className="settings">
-      <ul>
-        <li>Profile</li>
-        <li>Preferences</li>
-        <li>Security</li>
-        <li>Payment Methods</li>
-        <li>Crypto Addresses</li>
-      </ul>
+      <SettingsSelection selection="Profile" />
+      <SettingsSelection selection="Preferences" />
+      <SettingsSelection selection="Security" />
+      <SettingsSelection selection="Payment Methods" />
+      <SettingsSelection selection="Crypto Addresses" />
     </div>
   );
 };

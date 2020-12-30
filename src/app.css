@@ -169,7 +169,7 @@
   color: white;
 }
 .iconValue-button:hover {
-  border: 1px solid #d27d0d;
+  border: 1px solid;
   color: #d27d0d;
 }
 

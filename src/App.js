@@ -66,37 +66,6 @@ function App() {
     fetchData();
   }, []);
 
-  // creates graph data for table charts
-  // let marketCapByName = [];
-  // let marketCap = [];
-  // if (dataTableByMarketCap) {
-  //   dataTableByMarketCap
-  //     .slice(0, 5)
-  //     .map((name) => marketCapByName.push(name.name));
-  //   dataTableByMarketCap
-  //     .slice(0, 5)
-  //     .map((amount) => marketCap.push(amount.market_cap));
-  // }
-
-  // let volume = [];
-  // let volumeByName = [];
-  // if (dataTableByVolume) {
-  //   dataTableByVolume.slice(0, 5).map((name) => volumeByName.push(name.name));
-  //   dataTableByVolume
-  //     .slice(0, 5)
-  //     .map((amount) => volume.push(amount.total_volume));
-  // }
-
-  // const addItem = (detailName, detailPrice) => {
-  //   let name = detailName;
-  //   let price = detailPrice;
-  //   let arr = coinName.concat(name);
-  //   let arr1 = coinPrice.concat(price);
-  //   setCoinName(arr);
-  //   setCoinPrice(arr1);
-  // };
-  // ------------------------------------------------------------------>
-  // fetchs data for display on Dashboard/CoinInfo.js
   useEffect(() => {
     const searchCoin = async () => {
       const coinInfo = await axios.get(
@@ -158,7 +127,6 @@ function App() {
                       loading={loading}
                       active={chartDays === 1}
                       chartData={() => chartData(1)}
-                      loading={loading}
                       details={`${numeral(
                         coinInfo?.["price_change_24h"]
                       ).format("0,0.00")}%`}

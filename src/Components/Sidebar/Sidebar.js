@@ -74,10 +74,10 @@ const Sidebar = () => {
             Icon={AccessTimeIcon}
           />
         </Link>
-        <Link onClick={() => setSelected("MyAccount")} to="/MyAccount">
+        <Link onClick={() => setSelected("account")} to="/MyAccount">
           <SidebarOption
             open={open}
-            selected={selected === "myAccount"}
+            selected={selected === "account"}
             title="Account"
             Icon={AccountBoxIcon}
           />
