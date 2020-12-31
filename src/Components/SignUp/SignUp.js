@@ -6,7 +6,7 @@ import signup from "../../images/signup.svg";
 
 const SignUp = () => {
   const [viewPasswordIcon, setViewPasswordIcon] = useState(false);
-  const [viewPassword, setViewPassword] = useState(["password", "text"]);
+  const [viewPassword] = useState(["password", "text"]);
 
   const handlePassword = () => {
     setViewPasswordIcon(!viewPasswordIcon);
@@ -18,7 +18,7 @@ const SignUp = () => {
       <form className="signUp__form">
         <div className="signUp__title">
           <h3>Sign Up</h3>
-          <img src={signup} />
+          <img src={signup} alt="" />
         </div>
         <div className="signUp__name">
           <label>Full Name:</label>

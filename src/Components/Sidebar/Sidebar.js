@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./sidebar.css";
 import SidebarOption from "./SidebarOption";
 import HomeIcon from "@material-ui/icons/Home";
@@ -64,9 +64,8 @@ const Sidebar = () => {
             title="News"
             Icon={AnnouncementIcon}
           />
-        </Link>{" "}
+        </Link>
         <Link onClick={() => setSelected("Exchanges")} to="/Exchanges">
-          {" "}
           <SidebarOption
             open={open}
             selected={selected === "Exchanges"}
@@ -74,7 +73,7 @@ const Sidebar = () => {
             Icon={AccessTimeIcon}
           />
         </Link>
-        <Link onClick={() => setSelected("account")} to="/MyAccount">
+        <Link onClick={() => setSelected("account")} to="/Profile">
           <SidebarOption
             open={open}
             selected={selected === "account"}

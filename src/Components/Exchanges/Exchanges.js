@@ -5,12 +5,12 @@ import "./exchanges.css";
 import chart from "../../images/chart.svg";
 
 const Exchanges = () => {
-  const [exchanges, setExchanges] = useState([]);
+  const [, setExchanges] = useState([]);
   const [exchangeName, setExchangeName] = useState([]);
   const [exchangeVolume, setExchangeVolume] = useState(null);
-  const [exchangeImage, setExchangeImage] = useState("");
-  const [exchangeEstablishedDate, setExchangeEstablishedDate] = useState(null);
-  const [viewAllExchanges, setViewAllExchanges] = useState(false);
+  // const [exchangeImage, setExchangeImage] = useState("");
+  // const [exchangeEstablishedDate, setExchangeEstablishedDate] = useState(null);
+  // const [viewAllExchanges, setViewAllExchanges] = useState(false);
 
   useEffect(() => {
     const fetchExchanges = async () => {
@@ -42,7 +42,7 @@ const Exchanges = () => {
 
   return (
     <div className="exchanges">
-      <img src={chart} />
+      <img src={chart} alt="" />
       {colors.length > 0 && (
         <HorizontalBar
           data={{

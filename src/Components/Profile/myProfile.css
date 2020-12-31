@@ -9,10 +9,14 @@
   width: 50%;
 }
 .myProfile__form > input {
-  padding: 2.3%;
+  padding: 1.7%;
 }
 .myProfile__form > label {
   margin-top: 5%;
+}
+
+.myProfile__form > input:hover {
+  border: 2px solid #162336;
 }
 
 .myProfile__save-button {
@@ -23,4 +27,7 @@
   width: 18%;
   border-radius: 5px;
   margin-top: 4%;
+}
+.myProfile__save-button:hover {
+  background-color: #d27d0d;
 }

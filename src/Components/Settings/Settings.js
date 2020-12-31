@@ -5,13 +5,12 @@ import SettingsSelection from "./SettingsSelection";
 const Settings = () => {
   return (
     <div className="settings">
-      <SettingsSelection selection="Profile" />
-      <SettingsSelection selection="Preferences" />
-      <SettingsSelection selection="Security" />
-      <SettingsSelection selection="Payment Methods" />
-      <SettingsSelection selection="Crypto Addresses" />
+      <SettingsSelection selection="Profile" path="/Profile" />
+      <SettingsSelection selection="Preferences" path="/Preferences" />
+      <SettingsSelection selection="Security" path="/Security" />
+      <SettingsSelection selection="Payment Methods" path="/PaymentMethods" />
+      <SettingsSelection selection="Crypto Addresses" path="/CryptoAddresses" />
     </div>
   );
 };
-
 export default Settings;

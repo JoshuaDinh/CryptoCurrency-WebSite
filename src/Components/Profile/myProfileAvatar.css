@@ -21,3 +21,7 @@
   background-color: white;
   border: 1px solid grey;
 }
+
+.avatar__upload-button:hover {
+  border: 1px solid #d27d0d;
+}

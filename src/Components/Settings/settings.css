@@ -19,7 +19,9 @@
   padding: 0.4%;
   text-align: center;
   cursor: pointer;
+  color: white;
 }
 .settings__selection:hover {
   background: rgb(210, 125, 13, 0.7);
+  color: white;
 }

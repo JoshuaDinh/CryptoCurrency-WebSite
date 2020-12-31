@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./table.css";
 import numeral from "numeral";
 import Table from "@material-ui/core/Table";
@@ -9,8 +9,6 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import { withStyles } from "@material-ui/core/styles";
-import Checkbox from "@material-ui/core/Checkbox";
-import { Details } from "@material-ui/icons";
 
 const TableData = ({ table, setCoin }) => {
   const StyledTableRow = withStyles((theme) => ({
@@ -82,56 +80,3 @@ const TableData = ({ table, setCoin }) => {
 };
 
 export default TableData;
-
-{
-  /* <div className="table">
-<tr className="table__header">
-  <div></div>#</li>
-  <div></div>Coin</li>
-  <div></div> Price</li>
-  <div></div>Market-Cap</li>
-</tr>
-
-{results.map((details) => (
-  <tbody
-    onClick={(e) => onCoinSelect(details.id)}
-    className="table__data"
-  >
-    <div></div>{details.market_cap_rank}</li>
-    <div></div>
-      <img alt="coin-img" src={details.image} />
-      {details.name}
-    </li>
-    <div></div>${numeral(details.current_price).format("0,0")}</li>
-    <div></div>${numeral(details.market_cap).format("0,0")}</li>
-  </tbody>
-))}
-</div> */
-}
-
-// <div className="table__border">
-// <div className="table">
-//   <div className="table__list table__header">
-//     <div>#</div>
-//     <div>Coin</div>
-//     <div>Price</div>
-//     <div>MarketCap</div>
-//   </div>
-//   {results.map((details) => (
-//     <div
-//       onClick={(e) => onCoinSelect(details.id)}
-//       className="table__data"
-//     >
-//       <div className="table__list">
-//         <div>{details.market_cap_rank}</div>
-//         <div>
-//           <img alt="coin-img" src={details.image} />
-//           {details.name}
-//         </div>
-//         <div>${numeral(details.current_price).format("0,0")}</div>
-//         <div>${numeral(details.market_cap).format("0,0")}</div>
-//       </div>
-//     </div>
-//   ))}
-// </div>
-// </div>

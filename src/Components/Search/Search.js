@@ -1,8 +1,8 @@
 import React from "react";
 import "./search.css";
 import SearchIcon from "@material-ui/icons/Search";
-import SettingsIcon from "@material-ui/icons/Settings";
-import Avatar from "@material-ui/core/Avatar";
+// import SettingsIcon from "@material-ui/icons/Settings";
+// import Avatar from "@material-ui/core/Avatar";
 
 const Search = ({ onFormSearch, coin, list }) => {
   return (
@@ -10,7 +10,7 @@ const Search = ({ onFormSearch, coin, list }) => {
       <div className="form__inputContainer">
         <div className="form__icon">
           <SearchIcon fontSize="large" />
-        </div>{" "}
+        </div>
         <input
           onChange={(e) => onFormSearch(e.target.value)}
           placeholder="Search all assets..."

@@ -2,12 +2,7 @@ import React from "react";
 import "./coinInfo.css";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
-import {
-  Card,
-  CardContent,
-  Typography,
-  CircularProgress,
-} from "@material-ui/core";
+import { Card, CircularProgress } from "@material-ui/core";
 
 const CoinInfo = ({
   title,

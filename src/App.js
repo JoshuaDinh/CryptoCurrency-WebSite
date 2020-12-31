@@ -8,10 +8,10 @@ import CoinInfo from "./Components/CoinInfo/CoinInfo";
 import LineGraph from "./Components/LineGraph/LineGraph";
 import Settings from "./Components/Settings/Settings";
 import Profile from "./Components/Profile/Profile";
-import { LinearProgress } from "@material-ui/core";
+// import { LinearProgress } from "@material-ui/core";
 import News from "./Components/News/News";
 import Sidebar from "../src/Components/Sidebar/Sidebar";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SignUp from "./Components/SignUp/SignUp";
 import Exchanges from "./Components/Exchanges/Exchanges";
 // import Account from "./Components/Account/Account";
@@ -19,16 +19,16 @@ import AllTimeData from "./Components/AllTimeHigh/AllTimeData";
 import linegraph from "./images/linegraph.svg";
 import news from "./images/news.svg";
 
-function App() {
+const App = () => {
   const [dataTableByMarketCap, setDataTableByMarketCap] = useState([]);
-  const [dataTableByVolume, setDataTableByVolume] = useState([]);
+  // const [dataTableByVolume, setDataTableByVolume] = useState([]);
   const [list, setList] = useState([]);
   const [coin, setCoin] = useState("");
   const [coinInfo, setCoinInfo] = useState([]);
   const [loading, setLoading] = useState(true);
   const [chartDays, setChartDays] = useState(7);
-  const [coinName, setCoinName] = useState([]);
-  const [coinPrice, setCoinPrice] = useState([]);
+  // const [coinName, setCoinName] = useState([]);
+  // const [coinPrice, setCoinPrice] = useState([]);
 
   // Manages searched & selected coins
   const onFormSearch = (e) => {
@@ -60,10 +60,10 @@ function App() {
       setDataTableByMarketCap(marketCap.data);
 
       // fetchs list by volume
-      const volume = await axios.get(
-        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1&sparkline=false`
-      );
-      setDataTableByVolume(volume.data);
+      // const volume = await axios.get(
+      //   `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=100&page=1&sparkline=false`
+      // );
+      // setDataTableByVolume(volume.data);
     };
     fetchData();
   }, []);
@@ -91,7 +91,6 @@ function App() {
         <Switch>
           {/* <------------------------------------DASHBOARD---------------------------------------------> */}
           <Route path="/crypto">
-            {" "}
             <div className="app__container">
               <div className="app__header">
                 <Search list={list} coin={coin} onFormSearch={onFormSearch} />
@@ -111,7 +110,7 @@ function App() {
                         </h1>
                         <p>
                           <span>
-                            <img src={coinInfo?.["image"]} />
+                            <img src={coinInfo?.["image"]} alt="" />
                           </span>
                           ({coinInfo?.["symbol"]})
                         </p>
@@ -150,7 +149,6 @@ function App() {
                       loading={loading}
                       active={chartDays === 7}
                       chartData={() => chartData(7)}
-                      loading={loading}
                       percent="%"
                       details={`${numeral(
                         coinInfo?.["price_change_percentage_7d_in_currency"]
@@ -168,7 +166,6 @@ function App() {
                       loading={loading}
                       active={chartDays === 14}
                       chartData={() => chartData(14)}
-                      loading={loading}
                       percent="%"
                       details={`${numeral(
                         coinInfo?.["price_change_percentage_14d_in_currency"]
@@ -186,7 +183,6 @@ function App() {
                       loading={loading}
                       active={chartDays === 30}
                       chartData={() => chartData(30)}
-                      loading={loading}
                       percent="%"
                       details={`${numeral(
                         coinInfo?.["price_change_percentage_30d_in_currency"]
@@ -212,7 +208,7 @@ function App() {
                       <div className="app__graph-loader">
                         {/* <p>Waiting for selection..</p>
                         <LinearProgress /> */}
-                        <img src={linegraph} />
+                        <img src={linegraph} alt="" />
                       </div>
                     )}
                     <AllTimeData
@@ -247,7 +243,7 @@ function App() {
             <div className="app__news">
               <div className="app__news-title">
                 <h1>Top Stories</h1>
-                <img src={news} />
+                <img src={news} alt="" />
               </div>
               <hr></hr>
               <News />
@@ -264,10 +260,34 @@ function App() {
           </Route>
           ;
           {/* /* <------------------------------------MyAccount---------------------------------------------> */}
-          <Route path="/MyAccount">
+          <Route path="/Profile">
             <div className="app__account">
               <Settings />
               <Profile />
+            </div>
+          </Route>
+          <Route path="/Preferences">
+            <div className="app__account">
+              <Settings />
+              <p>Preferences</p>
+            </div>
+          </Route>
+          <Route path="/Security">
+            <div className="app__account">
+              <Settings />
+              <p>security</p>
+            </div>
+          </Route>
+          <Route path="/PaymentMethods">
+            <div className="app__account">
+              <Settings />
+              <p>paymentmethods</p>
+            </div>
+          </Route>
+          <Route path="/CryptoAddresses">
+            <div className="app__account">
+              <Settings />
+              <p>cryptoaddresses</p>
             </div>
           </Route>
           ;
@@ -288,6 +308,6 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default App;
