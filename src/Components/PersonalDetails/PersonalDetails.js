@@ -5,6 +5,7 @@ const PersonalDetails = () => {
   return (
     <div className="personalDetails">
       <h2>Personal Details</h2>
+      <hr></hr>
       <form className="personalDetails__form">
         <label>Legal Name</label>
         <input type="text" />

@@ -2,6 +2,9 @@
   display: grid;
   margin-left: 3%;
 }
+.myProfile__top-section {
+  display: flex;
+}
 
 .myProfile__form {
   display: flex;
@@ -13,10 +16,6 @@
 }
 .myProfile__form > label {
   margin-top: 5%;
-}
-
-.myProfile__form > input:hover {
-  border: 2px solid #162336;
 }
 
 .myProfile__save-button {

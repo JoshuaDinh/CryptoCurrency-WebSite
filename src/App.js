@@ -7,7 +7,8 @@ import Search from "./Components/Search/Search";
 import CoinInfo from "./Components/CoinInfo/CoinInfo";
 import LineGraph from "./Components/LineGraph/LineGraph";
 import Settings from "./Components/Settings/Settings";
-import Profile from "./Components/Profile/Profile";
+import MyProfile from "./Components/Profile/MyProfile";
+import Preferences from "./Components/Preferences/Preferences";
 // import { LinearProgress } from "@material-ui/core";
 import News from "./Components/News/News";
 import Sidebar from "../src/Components/Sidebar/Sidebar";
@@ -18,6 +19,8 @@ import Exchanges from "./Components/Exchanges/Exchanges";
 import AllTimeData from "./Components/AllTimeHigh/AllTimeData";
 import linegraph from "./images/linegraph.svg";
 import news from "./images/news.svg";
+import Notifications from "./Components/Preferences/Notifications";
+import PersonalDetails from "./Components/PersonalDetails/PersonalDetails";
 
 const App = () => {
   const [dataTableByMarketCap, setDataTableByMarketCap] = useState([]);
@@ -263,13 +266,15 @@ const App = () => {
           <Route path="/Profile">
             <div className="app__account">
               <Settings />
-              <Profile />
+              <MyProfile />
+              <PersonalDetails />
             </div>
           </Route>
           <Route path="/Preferences">
             <div className="app__account">
               <Settings />
-              <p>Preferences</p>
+              <Preferences />
+              <Notifications />
             </div>
           </Route>
           <Route path="/Security">
