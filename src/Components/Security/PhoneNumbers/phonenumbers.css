@@ -1,0 +1,39 @@
+.phoneNumbers {
+  margin: 3%;
+}
+
+.phoneNumber__icon {
+  font-size: 3em !important;
+}
+.phoneNumber__container {
+  margin-top: 4%;
+  height: 12vh;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid grey;
+}
+.phoneNumber__left {
+  display: flex;
+}
+
+.phoneNumber__title > p {
+  font-size: 0.6rem;
+}
+
+.phoneNumber__required {
+  color: green;
+  margin: 1%;
+}
+
+.phoneNumber__button {
+  background-color: white;
+  padding: 1.5%;
+  width: 20%;
+  margin-right: 8%;
+  border: 0.5px solid rgb(128, 128, 128, 0.5);
+}
+.phoneNumber__button:hover {
+  border: 1px solid #d27d0d;
+}

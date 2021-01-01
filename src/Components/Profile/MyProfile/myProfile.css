@@ -30,3 +30,11 @@
 .myProfile__save-button:hover {
   background-color: #d27d0d;
 }
+
+.myProfile__form > input:hover {
+  border: 2px solid #162336;
+}
+
+.myProfile__form-input-selected {
+  border: 2px solid #d27d0d;
+}

@@ -34,7 +34,7 @@ const News = () => {
       setLoading(!loading);
     };
     getNews();
-  }, [loading]);
+  }, []);
 
   return (
     <div className="news">

@@ -1,0 +1,78 @@
+.twoStepVerification {
+  margin: 3%;
+  display: grid;
+}
+
+.twoStepVerification__title {
+  font-size: 1.2rem;
+  margin-top: 1.5%;
+}
+.twoStepVerification__subTitle {
+  font-size: 0.9rem;
+}
+.twoStepVerification__current {
+  margin-top: 1%;
+  color: rgb(95, 95, 95);
+}
+
+.twoStepVerification__security {
+  color: orange;
+  margin: 1%;
+}
+
+.message__icon {
+  font-size: 3em !important;
+}
+.twoStepVerification__text-message-container {
+  height: 12vh;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid grey;
+}
+.twoStepVerification__text-message__left {
+  display: flex;
+}
+
+.twoStepVerification__text-message__title > p {
+  font-size: 0.6rem;
+}
+
+.twoStepVerification__text-message__required {
+  color: green;
+  margin: 1%;
+}
+
+.twoStepVerification__text-message__button {
+  background-color: white;
+  padding: 1.5%;
+  width: 20%;
+  margin-right: 8%;
+  border: 0.5px solid rgb(128, 128, 128, 0.5);
+}
+.twoStepVerification__text-message__button:hover {
+  border: 1px solid #d27d0d;
+}
+
+.twoStepVerification__checkBoxs {
+  display: grid;
+}
+.twoStepVerification__checkBox > label {
+  margin-left: 1%;
+  font-size: 0.8rem;
+}
+
+.twoStepVerification__button {
+  background-color: #1652f0;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 10%;
+  border-radius: 5px;
+  margin-top: 3%;
+  padding: 1.5%;
+}
+.twoStepVerification__button:hover {
+  background-color: #d27d0d;
+}

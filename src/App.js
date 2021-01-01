@@ -7,8 +7,8 @@ import Search from "./Components/Search/Search";
 import CoinInfo from "./Components/CoinInfo/CoinInfo";
 import LineGraph from "./Components/LineGraph/LineGraph";
 import Settings from "./Components/Settings/Settings";
-import MyProfile from "./Components/Profile/MyProfile";
-import Preferences from "./Components/Preferences/Preferences";
+import MyProfile from "./Components/Profile/MyProfile/MyProfile";
+import Preferences from "./Components/Preferences/Preferences/Preferences";
 // import { LinearProgress } from "@material-ui/core";
 import News from "./Components/News/News";
 import Sidebar from "../src/Components/Sidebar/Sidebar";
@@ -19,8 +19,11 @@ import Exchanges from "./Components/Exchanges/Exchanges";
 import AllTimeData from "./Components/AllTimeHigh/AllTimeData";
 import linegraph from "./images/linegraph.svg";
 import news from "./images/news.svg";
-import Notifications from "./Components/Preferences/Notifications";
-import PersonalDetails from "./Components/PersonalDetails/PersonalDetails";
+import Notifications from "./Components/Preferences/Notifications/Notifications";
+import PersonalDetails from "./Components/Profile/PersonalDetails/PersonalDetails";
+// import { Phone } from "@material-ui/icons";
+import PhoneNumbers from "./Components/Security/PhoneNumbers/PhoneNumbers";
+import TwoStepVerification from "./Components/Security/TwoStepVerification/TwoStepVerification";
 
 const App = () => {
   const [dataTableByMarketCap, setDataTableByMarketCap] = useState([]);
@@ -280,7 +283,8 @@ const App = () => {
           <Route path="/Security">
             <div className="app__account">
               <Settings />
-              <p>security</p>
+              <PhoneNumbers />
+              <TwoStepVerification />
             </div>
           </Route>
           <Route path="/PaymentMethods">

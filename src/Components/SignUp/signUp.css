@@ -43,7 +43,6 @@
 .signUp__name > input,
 .signUp__email > input,
 .signUp__password > input {
-  outline: none;
   padding: 3px;
 }
 .signUp__name > label,
@@ -90,10 +89,6 @@
 .signUp__button:hover::before,
 .signUp__button:hover::before {
   transform: scaleX(1);
-}
-
-.signUp__button:focus {
-  outline: 0;
 }
 
 .signUp__name > input:hover,
