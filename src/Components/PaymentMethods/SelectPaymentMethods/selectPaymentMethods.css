@@ -1,11 +1,57 @@
 /* Select Payment Methods */
 
 .selectPaymentMethods {
-  border: 1px solid red;
+  border: 1px solid #d27d0d;
+  display: flex;
+  flex-direction: column;
   width: 40vw;
-  height: 80vh;
   position: absolute;
-  top: 15%;
+  top: 3%;
   left: 33%;
   background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.selectPaymentMethods__header {
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+.paymentSelection__title {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Payment Selection */
+
+.paymentSelection {
+  border-bottom: 1px solid grey;
+  padding: 2% 4%;
+  background-color: whitesmoke;
+}
+
+.paymentSelection__description-container {
+  display: flex;
+}
+
+.paymentSelection__description {
+  font-size: 0.9rem;
+}
+.paymentSelection__arrow-icon {
+  color: rgb(128, 128, 128, 0.3);
+}
+.paymentSelection__selected {
+  color: #d27d0d;
+  transform: translateX(10px);
+}
+
+.paymentSelection__recommended {
+  color: #1652f0;
+}
+
+.paymentSelection__bank {
+  color: green;
 }
