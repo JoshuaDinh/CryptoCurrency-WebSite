@@ -94,7 +94,7 @@ button:focus {
 }
 
 .app__graph-loader > img {
-  width: 70%;
+  width: 50%;
 }
 
 .app__sidebar {

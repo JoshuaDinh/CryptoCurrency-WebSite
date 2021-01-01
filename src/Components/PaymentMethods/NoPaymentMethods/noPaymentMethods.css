@@ -1,0 +1,26 @@
+/* No Payment Methods */
+.noPaymentMethods {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.noPaymentMethods > p {
+  line-height: 2.9rem;
+  font-size: 1.3rem;
+}
+
+.noPaymentMethods__button {
+  padding: 1%;
+  background-color: #1652f0;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 18%;
+  border-radius: 5px;
+}
+
+.noPaymentMethods__button:hover {
+  background-color: #d27d0d;
+}

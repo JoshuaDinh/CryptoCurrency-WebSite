@@ -19,9 +19,15 @@
   padding: 3%;
   width: 33%;
   background-color: white;
-  border: 1px solid grey;
+  border: 1px solid rgb(128, 128, 128, 0.5);
+  text-align: center;
+  cursor: pointer;
 }
 
 .avatar__upload-button:hover {
   border: 1px solid #d27d0d;
+}
+
+.myProfile__avatar-upload-btn {
+  display: none;
 }

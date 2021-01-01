@@ -10,7 +10,14 @@ const MyProfileAvatar = () => {
         <h5>Change Picture</h5>
         <p>Maz file size is 20Mb</p>
       </div>
-      <button className="avatar__upload-button">Upload</button>
+      <input
+        className="myProfile__avatar-upload-btn"
+        type="file"
+        id="actual-btn"
+      />
+      <label className="avatar__upload-button" for="actual-btn">
+        Upload
+      </label>
     </div>
   );
 };

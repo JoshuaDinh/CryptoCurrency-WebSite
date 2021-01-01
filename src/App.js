@@ -24,6 +24,7 @@ import PersonalDetails from "./Components/Profile/PersonalDetails/PersonalDetail
 // import { Phone } from "@material-ui/icons";
 import PhoneNumbers from "./Components/Security/PhoneNumbers/PhoneNumbers";
 import TwoStepVerification from "./Components/Security/TwoStepVerification/TwoStepVerification";
+import PaymentMethods from "./Components/PaymentMethods/PaymentMethods";
 
 const App = () => {
   const [dataTableByMarketCap, setDataTableByMarketCap] = useState([]);
@@ -290,7 +291,7 @@ const App = () => {
           <Route path="/PaymentMethods">
             <div className="app__account">
               <Settings />
-              <p>paymentmethods</p>
+              <PaymentMethods />
             </div>
           </Route>
           <Route path="/CryptoAddresses">
