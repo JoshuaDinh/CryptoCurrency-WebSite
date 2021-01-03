@@ -2,3 +2,9 @@
   display: grid;
   margin: 3%;
 }
+.paymentMethods > button {
+  position: absolute;
+  right: 5%;
+  width: 15%;
+  top: 14%;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./selectPaymentMethods.css";
 import CloseIcon from "@material-ui/icons/Close";
 import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
@@ -6,6 +6,7 @@ import PaymentIcon from "@material-ui/icons/Payment";
 import paypal from "../../../images/paypal.png";
 import wiretransfer from "../../../images/wiretransfer.png";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import { BankAccount } from "../BankAccount/BankAccount";
 
 export const PaymentSelection = ({
   title,
@@ -15,12 +16,18 @@ export const PaymentSelection = ({
   icon,
 }) => {
   const [selected, setSelected] = useState(false);
+  const [openSelected, setOpenSelected] = useState(false);
+
+  const handleSelection = () => {
+    setOpenSelected(true);
+  };
 
   return (
     <div
       className="paymentSelection"
       onMouseEnter={() => setSelected(true)}
       onMouseLeave={() => setSelected(false)}
+      onClick={() => handleSelection}
     >
       <div className="paymentSelection__title">
         {icon}
@@ -46,9 +53,24 @@ export const PaymentSelection = ({
   );
 };
 
-export const SelectPaymentMethods = () => {
+export const SelectPaymentMethods = ({ setOpenPaymentModal, openSelected }) => {
+  const ref = useRef();
+
+  useEffect(() => {
+    const onBodyClick = (event) => {
+      if (ref?.current?.contains(event.target)) {
+        return;
+      }
+      setOpenPaymentModal(false);
+    };
+    document.body.addEventListener("click", onBodyClick);
+    // removes/turns off event listener / when removing dropdown on app.js ref.current can no longer be refered to (creates error with null.contains)
+    return () => {
+      document.body.removeEventListener("click", onBodyClick);
+    };
+  }, []);
   return (
-    <div className="selectPaymentMethods">
+    <div className="selectPaymentMethods" ref={ref}>
       <div className="selectPaymentMethods__header">
         <h4>Add Account</h4>
         <CloseIcon fontSize="large" />
@@ -77,6 +99,7 @@ export const SelectPaymentMethods = () => {
         icon={<img src={wiretransfer} />}
         description="Use a wire transfer to transfer cash into or out of you account. Typically used for large single transfers"
       />
+      {openSelected && <BankAccount />}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./paymentMethods.css";
 import { NoPaymentMethods } from "./NoPaymentMethods/NoPaymentMethods";
 import { SelectPaymentMethods } from "./SelectPaymentMethods/SelectPaymentMethods";
@@ -9,9 +9,17 @@ const PaymentMethods = () => {
   return (
     <div className="paymentMethods">
       <h2>PaymentMethods</h2>
+      {/* <button
+        onClick={() => setOpenPaymentModal(true)}
+        className="noPaymentMethods__button"
+      >
+        Add a payment method
+      </button> */}
       <hr></hr>
-      <NoPaymentMethods setOpenPaymentModal={() => setOpenPaymentModal(true)} />
-      {openPaymentModal && <SelectPaymentMethods />}
+      <NoPaymentMethods setOpenPaymentModal={setOpenPaymentModal} />
+      {openPaymentModal && (
+        <SelectPaymentMethods setOpenPaymentModal={setOpenPaymentModal} />
+      )}
     </div>
   );
 };
