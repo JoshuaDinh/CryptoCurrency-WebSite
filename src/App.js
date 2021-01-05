@@ -270,6 +270,7 @@ const App = () => {
           <Route path="/Profile">
             <div className="app__account">
               <Settings />
+
               <MyProfile />
               <PersonalDetails />
             </div>

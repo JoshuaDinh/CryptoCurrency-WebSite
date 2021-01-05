@@ -14,20 +14,16 @@ export const PaymentSelection = ({
   description,
   Recommended,
   icon,
+  setOpenSelected,
 }) => {
   const [selected, setSelected] = useState(false);
-  const [openSelected, setOpenSelected] = useState(false);
-
-  const handleSelection = () => {
-    setOpenSelected(true);
-  };
 
   return (
     <div
       className="paymentSelection"
       onMouseEnter={() => setSelected(true)}
       onMouseLeave={() => setSelected(false)}
-      onClick={() => handleSelection}
+      onClick={() => setOpenSelected()}
     >
       <div className="paymentSelection__title">
         {icon}
@@ -53,7 +49,8 @@ export const PaymentSelection = ({
   );
 };
 
-export const SelectPaymentMethods = ({ setOpenPaymentModal, openSelected }) => {
+export const SelectPaymentMethods = ({ setOpenPaymentModal }) => {
+  const [openSelected, setOpenSelected] = useState(null);
   const ref = useRef();
 
   useEffect(() => {
@@ -69,6 +66,7 @@ export const SelectPaymentMethods = ({ setOpenPaymentModal, openSelected }) => {
       document.body.removeEventListener("click", onBodyClick);
     };
   }, []);
+
   return (
     <div className="selectPaymentMethods" ref={ref}>
       <div className="selectPaymentMethods__header">
@@ -99,7 +97,6 @@ export const SelectPaymentMethods = ({ setOpenPaymentModal, openSelected }) => {
         icon={<img src={wiretransfer} />}
         description="Use a wire transfer to transfer cash into or out of you account. Typically used for large single transfers"
       />
-      {openSelected && <BankAccount />}
     </div>
   );
 };

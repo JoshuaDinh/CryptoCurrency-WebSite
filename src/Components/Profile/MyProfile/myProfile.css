@@ -26,7 +26,11 @@
   width: 18%;
   border-radius: 5px;
   margin-top: 4%;
+  -webkit-box-shadow: 0 10px 6px -6px #777 !important;
+  -moz-box-shadow: 0 10px 6px -6px #777 !important;
+  box-shadow: 0 10px 6px -6px #777 !important;
 }
+
 .myProfile__save-button:hover {
   background-color: #d27d0d;
 }

@@ -9,12 +9,6 @@ const PaymentMethods = () => {
   return (
     <div className="paymentMethods">
       <h2>PaymentMethods</h2>
-      {/* <button
-        onClick={() => setOpenPaymentModal(true)}
-        className="noPaymentMethods__button"
-      >
-        Add a payment method
-      </button> */}
       <hr></hr>
       <NoPaymentMethods setOpenPaymentModal={setOpenPaymentModal} />
       {openPaymentModal && (
