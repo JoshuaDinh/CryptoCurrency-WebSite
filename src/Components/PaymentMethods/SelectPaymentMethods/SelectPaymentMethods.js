@@ -74,6 +74,7 @@ export const SelectPaymentMethods = ({ setOpenPaymentModal }) => {
             onClick={() => setOpenPaymentModal(false)}
           />
         </div>
+        <hr></hr>
         <PaymentSelection
           title="Bank Account"
           icon={<AccountBalanceIcon />}

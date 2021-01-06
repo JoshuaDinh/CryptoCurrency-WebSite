@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./search.css";
+import { SettingsMenu } from "./SettingsMenu/SettingsMenu";
 import SearchIcon from "@material-ui/icons/Search";
-// import SettingsIcon from "@material-ui/icons/Settings";
-// import Avatar from "@material-ui/core/Avatar";
+import SettingsIcon from "@material-ui/icons/Settings";
+import Avatar from "@material-ui/core/Avatar";
+import { Link } from "react-router-dom";
 
 const Search = ({ onFormSearch, coin, list }) => {
+  const [settingsMenu, setSettingsMenu] = useState(false);
+
   return (
     <form className="form">
       <div className="form__inputContainer">
@@ -28,10 +32,15 @@ const Search = ({ onFormSearch, coin, list }) => {
           </select>
         </datalist>
       )}
-      {/* <div className="search__icons">
-        <SettingsIcon />
+      {settingsMenu && <SettingsMenu setSettingsMenu={setSettingsMenu} />}
+      <SettingsIcon
+        onClick={() => setSettingsMenu(!settingsMenu)}
+        className="search__icons"
+        fontSize="large"
+      />
+      <Link to="./profile" className="search__icons">
         <Avatar />
-      </div>{" "} */}
+      </Link>
     </form>
   );
 };

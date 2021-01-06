@@ -11,7 +11,6 @@
 
 .selectPaymentMethods__close-icon:hover {
   color: #d27d0d;
-  font-size: 2.3rem;
 }
 
 .selectPaymentMethods {
@@ -31,11 +30,6 @@
   padding: 1%;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid grey;
-}
-
-.paymentSelection__title {
-  display: flex;
   align-items: flex-start;
 }
 
@@ -45,6 +39,11 @@
   border-bottom: 1px solid grey;
   padding: 2% 4%;
   background-color: whitesmoke;
+}
+
+.paymentSelection__title {
+  display: flex;
+  align-items: flex-start;
 }
 
 .paymentSelection__description-container {
