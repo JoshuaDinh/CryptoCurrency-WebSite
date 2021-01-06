@@ -1,14 +1,15 @@
 .allTimeData {
   height: 100%;
   width: 20%;
-  padding-top: 20px;
-  margin: 0 20px;
+  padding-top: 2%;
+  margin: 0 2%;
   border-radius: 10px;
-  border-top: 2px solid #d27d0d;
   background-color: white;
   text-align: center;
   display: grid;
   justify-content: center;
+  border: 1px solid rgb(204, 204, 204);
+  border-top: 2px solid #d27d0d;
   -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
   -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;
   box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75) !important;

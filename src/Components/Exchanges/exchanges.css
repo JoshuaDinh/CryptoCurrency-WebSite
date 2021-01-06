@@ -1,12 +1,4 @@
 .exchanges {
   height: 80%;
-  width: 100%;
-}
-
-.exchanges > img {
-  color: white;
-  position: absolute;
-  top: 35%;
-  right: 5%;
-  width: 470px;
+  width: 90%;
 }

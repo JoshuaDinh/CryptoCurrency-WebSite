@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { HorizontalBar } from "react-chartjs-2";
 import axios from "axios";
 import "./exchanges.css";
-import chart from "../../images/chart.svg";
 
 const Exchanges = () => {
   const [, setExchanges] = useState([]);
@@ -42,7 +41,6 @@ const Exchanges = () => {
 
   return (
     <div className="exchanges">
-      <img src={chart} alt="" />
       {colors.length > 0 && (
         <HorizontalBar
           data={{

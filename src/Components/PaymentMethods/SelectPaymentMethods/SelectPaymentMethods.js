@@ -6,7 +6,6 @@ import PaymentIcon from "@material-ui/icons/Payment";
 import paypal from "../../../images/paypal.png";
 import wiretransfer from "../../../images/wiretransfer.png";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-import { BankAccount } from "../BankAccount/BankAccount";
 
 export const PaymentSelection = ({
   title,
@@ -14,7 +13,6 @@ export const PaymentSelection = ({
   description,
   Recommended,
   icon,
-  setOpenSelected,
 }) => {
   const [selected, setSelected] = useState(false);
 
@@ -23,7 +21,6 @@ export const PaymentSelection = ({
       className="paymentSelection"
       onMouseEnter={() => setSelected(true)}
       onMouseLeave={() => setSelected(false)}
-      onClick={() => setOpenSelected()}
     >
       <div className="paymentSelection__title">
         {icon}
@@ -50,7 +47,6 @@ export const PaymentSelection = ({
 };
 
 export const SelectPaymentMethods = ({ setOpenPaymentModal }) => {
-  const [openSelected, setOpenSelected] = useState(null);
   const ref = useRef();
 
   useEffect(() => {
@@ -68,35 +64,41 @@ export const SelectPaymentMethods = ({ setOpenPaymentModal }) => {
   }, []);
 
   return (
-    <div className="selectPaymentMethods" ref={ref}>
-      <div className="selectPaymentMethods__header">
-        <h4>Add Account</h4>
-        <CloseIcon fontSize="large" />
+    <div className="selectPaymentMethods__background">
+      <div className="selectPaymentMethods" ref={ref}>
+        <div className="selectPaymentMethods__header">
+          <h4>Add Account</h4>
+          <CloseIcon
+            fontSize="large"
+            className="selectPaymentMethods__close-icon"
+            onClick={() => setOpenPaymentModal(false)}
+          />
+        </div>
+        <PaymentSelection
+          title="Bank Account"
+          icon={<AccountBalanceIcon />}
+          subTitle="Invest large amounts"
+          description="Use a bank account to buy crypto and deposit or withdraw cash. Buy orders process isntantly"
+          Recommended="Recommended"
+        />
+        <PaymentSelection
+          title="PayPal"
+          icon={<img src={paypal} alt="" />}
+          subTitle="For withdrawls only"
+          description="Link your account to isntantly withdraw funds from your account to PayPal. Deposits are not currently available."
+        />
+        <PaymentSelection
+          title="Debit Card"
+          icon={<PaymentIcon />}
+          subTitle="Invest small amounts"
+          description="Use any Visa or Mastercard debit card to make small investments. Add a bank or waller to sell."
+        />
+        <PaymentSelection
+          title="Wire Transfer"
+          icon={<img src={wiretransfer} alt="" />}
+          description="Use a wire transfer to transfer cash into or out of you account. Typically used for large single transfers"
+        />
       </div>
-      <PaymentSelection
-        title="Bank Account"
-        icon={<AccountBalanceIcon />}
-        subTitle="Invest large amounts"
-        description="Use a bank account to buy crypto and deposit or withdraw cash. Buy orders process isntantly"
-        Recommended="Recommended"
-      />
-      <PaymentSelection
-        title="PayPal"
-        icon={<img src={paypal} />}
-        subTitle="For withdrawls only"
-        description="Link your account to isntantly withdraw funds from your account to PayPal. Deposits are not currently available."
-      />
-      <PaymentSelection
-        title="Debit Card"
-        icon={<PaymentIcon />}
-        subTitle="Invest small amounts"
-        description="Use any Visa or Mastercard debit card to make small investments. Add a bank or waller to sell."
-      />
-      <PaymentSelection
-        title="Wire Transfer"
-        icon={<img src={wiretransfer} />}
-        description="Use a wire transfer to transfer cash into or out of you account. Typically used for large single transfers"
-      />
     </div>
   );
 };

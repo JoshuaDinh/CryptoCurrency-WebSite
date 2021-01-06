@@ -3,8 +3,7 @@
 }
 
 .sidebar__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   background-color: #162336;
   height: 100%;
   color: white;
@@ -18,7 +17,7 @@
 }
 
 .sidebar__title {
-  font-size: 20px;
+  font-size: 1.3rem;
   font-family: "Italianno", cursive;
 }
 
@@ -32,7 +31,6 @@
   align-items: center;
   padding: 15px;
   transition: 0.4s ease-in-out;
-  margin-top: 25px;
 }
 
 .sidebarOption:hover,
@@ -57,6 +55,7 @@
 .nav__mobile {
   border: 1px solid whitesmoke;
   background-color: #162336;
+  height: 100%;
   display: none;
 }
 .nav__mobile-container > a > .sidebarOption {
@@ -78,5 +77,8 @@
 
   .nav__mobile {
     display: grid;
+  }
+  .sidebarOption__open {
+    width: 100vw;
   }
 }

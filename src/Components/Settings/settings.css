@@ -30,3 +30,15 @@
   background: rgb(210, 125, 13, 0.7);
   color: white;
 }
+
+@media only screen and (max-width: 1200px) {
+  .settings__selection {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .settings__selection {
+    width: 100%;
+  }
+}

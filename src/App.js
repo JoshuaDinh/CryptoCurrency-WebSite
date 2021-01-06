@@ -25,6 +25,7 @@ import PersonalDetails from "./Components/Profile/PersonalDetails/PersonalDetail
 import PhoneNumbers from "./Components/Security/PhoneNumbers/PhoneNumbers";
 import TwoStepVerification from "./Components/Security/TwoStepVerification/TwoStepVerification";
 import PaymentMethods from "./Components/PaymentMethods/PaymentMethods";
+import chart from "../src/images/chart.svg";
 
 const App = () => {
   const [dataTableByMarketCap, setDataTableByMarketCap] = useState([]);
@@ -260,7 +261,10 @@ const App = () => {
           {/* /* <------------------------------------Exchanges---------------------------------------------> */}
           <Route path="/Exchanges">
             <div className="app__exchanges">
-              <h1>Top Exchanges by Trust Score </h1>
+              <div className="app__exchanges-title">
+                <h1>Top Exchanges by Trust Score </h1>
+                <img src={chart} alt="" />
+              </div>
               <hr></hr>
               <Exchanges />
             </div>
@@ -270,7 +274,6 @@ const App = () => {
           <Route path="/Profile">
             <div className="app__account">
               <Settings />
-
               <MyProfile />
               <PersonalDetails />
             </div>

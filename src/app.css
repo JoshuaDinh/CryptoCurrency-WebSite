@@ -74,7 +74,6 @@ button:focus {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-left: 25px;
 }
 
 .app__graph-container {
@@ -187,13 +186,20 @@ button:focus {
   width: 100%;
 }
 
-.app__exchanges > h1 {
+.app__exchanges-title {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   color: #d27d0d;
   margin-top: 1%;
+}
+
+.app__exchanges-title > img {
+  color: white;
+  width: 10em;
+  margin-left: 4%;
+  object-fit: contain;
 }
 /* ----------------------Account--------------------------------------------*/
 

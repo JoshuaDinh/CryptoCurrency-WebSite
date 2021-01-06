@@ -1,22 +1,36 @@
 /* Select Payment Methods */
 
+.selectPaymentMethods__background {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.selectPaymentMethods__close-icon:hover {
+  color: #d27d0d;
+  font-size: 2.3rem;
+}
+
 .selectPaymentMethods {
   border: 1px solid #d27d0d;
   display: flex;
   flex-direction: column;
   width: 40vw;
   position: absolute;
-  top: 3%;
-  left: 33%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: whitesmoke;
   cursor: pointer;
 }
 
 .selectPaymentMethods__header {
-  padding: 3%;
+  padding: 1%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid grey;
 }
 
@@ -54,4 +68,10 @@
 
 .paymentSelection__bank {
   color: green;
+}
+
+@media only screen and (max-width: 1000px) {
+  .selectPaymentMethods {
+    width: 70vw;
+  }
 }
