@@ -100,9 +100,8 @@ const App = () => {
           {/* <------------------------------------DASHBOARD---------------------------------------------> */}
           <Route path="/crypto">
             <div className="app__container">
-              <div className="app__header">
-                <Search list={list} coin={coin} onFormSearch={onFormSearch} />
-              </div>
+              <Search list={list} coin={coin} onFormSearch={onFormSearch} />
+
               <div className="app__data">
                 <TableData
                   setCoin={onCoinSelect}

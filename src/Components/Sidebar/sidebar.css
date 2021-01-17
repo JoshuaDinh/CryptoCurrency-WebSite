@@ -30,7 +30,6 @@
   justify-content: flex-start;
   align-items: center;
   padding: 15px;
-  transition: 0.4s ease-in-out;
 }
 
 .sidebarOption:hover,

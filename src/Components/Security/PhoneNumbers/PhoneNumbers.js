@@ -1,12 +1,12 @@
 import React from "react";
 import "./phonenumbers.css";
 import PhonelinkSetupIcon from "@material-ui/icons/PhonelinkSetup";
+import AccountHeader from "../../Account/AccountHeader";
 
 const PhoneNumbers = () => {
   return (
     <div className="phoneNumbers">
-      <h2>Phone Numbers</h2>
-      <hr></hr>
+      <AccountHeader accountTitle="Phone Numbers" />
       <div className="phoneNumber__container">
         <div className="phoneNumber__left">
           <PhonelinkSetupIcon className="phoneNumber__icon" />{" "}

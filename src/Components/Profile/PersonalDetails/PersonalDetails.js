@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AccountHeader from "../../Account/AccountHeader";
 import "./personalDetails.css";
 
 const PersonalDetails = () => {
@@ -12,8 +13,7 @@ const PersonalDetails = () => {
 
   return (
     <div className="personalDetails">
-      <h2>Personal Details</h2>
-      <hr></hr>
+      <AccountHeader accountTitle="Personal Details" />
       <form className="personalDetails__form">
         <label>Legal Name</label>
         <input
@@ -69,7 +69,7 @@ const PersonalDetails = () => {
             />
           </div>
         </div>
-        <button className="myProfile__save-button">Save</button>
+        <button className="main-button">Save</button>
       </form>
     </div>
   );

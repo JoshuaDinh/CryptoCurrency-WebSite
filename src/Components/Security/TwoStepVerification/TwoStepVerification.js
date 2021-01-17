@@ -1,12 +1,12 @@
 import React from "react";
 import "./twostepverification.css";
 import MessageIcon from "@material-ui/icons/Message";
+import AccountHeader from "../../Account/AccountHeader";
 
 const TwoStepVerification = () => {
   return (
     <div className="twoStepVerification">
-      <h2>2-Step verification</h2>
-      <hr></hr>
+      <AccountHeader accountTitle="2-Step Verification" />
       <div className="twoStepVerification__heading">
         <p className="twoStepVerification__title">
           Select your 2-step verification method:

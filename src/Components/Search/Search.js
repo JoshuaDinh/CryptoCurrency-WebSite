@@ -23,6 +23,7 @@ const Search = ({ onFormSearch, coin, list }) => {
           list={"coins"}
         />{" "}
       </div>
+
       {coin.length > 1 && (
         <datalist id="coins">
           <select>
@@ -32,12 +33,15 @@ const Search = ({ onFormSearch, coin, list }) => {
           </select>
         </datalist>
       )}
+
       {settingsMenu && <SettingsMenu setSettingsMenu={setSettingsMenu} />}
+
       <SettingsIcon
         onClick={() => setSettingsMenu(!settingsMenu)}
         className="search__icons"
         fontSize="large"
       />
+
       <Link to="./profile" className="search__icons">
         <Avatar />
       </Link>

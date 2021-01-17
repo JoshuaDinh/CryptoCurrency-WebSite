@@ -1,11 +1,11 @@
 import React from "react";
 import "./notifications.css";
+import AccountHeader from "../../Account/AccountHeader";
 
 const Notifications = () => {
   return (
     <div className="notifications">
-      <h2>Notifications</h2>
-      <hr></hr>
+      <AccountHeader accountTitle="Notifications" />
       <p className="notifications__text">Email me when:</p>
       <div className="notifications__check-box">
         <input type="checkbox" />

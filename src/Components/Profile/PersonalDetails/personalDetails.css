@@ -22,7 +22,7 @@
 .personalDetails__form > label {
   margin-top: 5%;
 }
-
+/* 
 .myProfile__save-button {
   padding: 2.6%;
   background-color: #1652f0;
@@ -32,7 +32,7 @@
   width: 20%;
   border-radius: 5px;
   margin-top: 4%;
-}
+} */
 
 .personalDetails__dualInput {
   margin-top: 2%;

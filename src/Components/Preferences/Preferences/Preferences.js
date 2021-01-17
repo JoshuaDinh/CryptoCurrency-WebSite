@@ -1,11 +1,11 @@
 import React from "react";
 import "./preferences.css";
+import AccountHeader from "../../Account/AccountHeader";
 
 const Preferences = () => {
   return (
     <div className="preferences">
-      <h2>Preferences</h2>
-      <hr></hr>
+      <AccountHeader accountTitle="Preferences" />
       <form className="preferences__form">
         <label className="currency__label">Local Currency</label>
         <select name="user[native_currency]" id="user_native_currency">

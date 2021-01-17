@@ -1,5 +1,4 @@
 .myProfile {
-  display: grid;
   margin-left: 3%;
 }
 .myProfile__top-section {
@@ -17,7 +16,7 @@
 .myProfile__form > label {
   margin-top: 5%;
 }
-
+/* 
 .myProfile__save-button {
   background-color: #1652f0;
   border: none;
@@ -33,7 +32,7 @@
 
 .myProfile__save-button:hover {
   background-color: #d27d0d;
-}
+} */
 
 .myProfile__form > input:hover {
   border: 2px solid #162336;

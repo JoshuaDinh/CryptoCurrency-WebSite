@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./myProfile.css";
 import MyProfileAvatar from "../ProfileAvatar/MyProfileAvatar";
 import Password from "../Password/Password";
+import AccountHeader from "../../Account/AccountHeader";
 
 const MyProfile = () => {
   const [emailSelected, setEmailSelected] = useState(false);
@@ -9,8 +10,7 @@ const MyProfile = () => {
 
   return (
     <div className="myProfile">
-      <h2>My Profile</h2>
-      <hr></hr>
+      <AccountHeader accountTitle="My Profile" />
       <div className="myProfile__top-section">
         <MyProfileAvatar />
         <Password />
@@ -28,7 +28,7 @@ const MyProfile = () => {
           onChange={() => setEmailSelected(true)}
           className={emailSelected && "myProfile__form-input-selected"}
         />
-        <button className="myProfile__save-button">Save</button>
+        <button className="main-button">Save</button>
       </form>
     </div>
   );

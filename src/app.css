@@ -12,9 +12,28 @@
   height: 100vh;
   width: 100vw;
 }
+
 input {
   cursor: pointer;
   outline: none;
+}
+
+.main-button {
+  padding: 2.6%;
+  background-color: #1652f0;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 20%;
+  border-radius: 5px;
+  margin-top: 4%;
+  -webkit-box-shadow: 0 10px 6px -6px #777 !important;
+  -moz-box-shadow: 0 10px 6px -6px #777 !important;
+  box-shadow: 0 10px 6px -6px #777 !important;
+}
+
+.main-button:hover {
+  background-color: #d27d0d;
 }
 
 button:focus {
@@ -22,11 +41,6 @@ button:focus {
 }
 
 /* ----------------------APP DASHBOARD--------------------------------------------*/
-
-.app__header {
-  display: flex;
-  margin-bottom: 10px;
-}
 
 .app__header > img {
   width: 60px;
