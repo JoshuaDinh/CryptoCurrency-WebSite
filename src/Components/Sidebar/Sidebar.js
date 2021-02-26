@@ -14,7 +14,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 import { Link } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({ setSignUpModal }) => {
   const [selected, setSelected] = useState("");
   const [open, setOpen] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
@@ -49,14 +49,6 @@ const Sidebar = () => {
             Icon={HomeIcon}
           />
         </Link>{" "}
-        {/* <Link onClick={() => setSelected("DataTable")} to="/Data">
-          <SidebarOption
-            open={open}
-            selected={selected === "DataTable"}
-            title="Data Table"
-            Icon={DataUsageIcon}
-          />
-        </Link>{" "} */}
         <Link onClick={() => setSelected("News")} to="/News">
           <SidebarOption
             open={open}
@@ -83,14 +75,14 @@ const Sidebar = () => {
         </Link>
         <br />
         <hr />
-        <Link onClick={() => setSelected("SignUp")} to="/SignUp">
+        <div onClick={() => setSignUpModal(true)}>
           <SidebarOption
             open={open}
             selected={selected === "SignUp"}
             title="Sign-Up"
             Icon={AccountBoxIcon}
           />
-        </Link>
+        </div>
         <Link onClick={() => setSelected("SignOut")} to="/SignOut">
           <SidebarOption
             open={open}
@@ -148,22 +140,22 @@ const Sidebar = () => {
               Icon={AccountBoxIcon}
             />
           </Link>
-          <Link onClick={() => setSelected("SignUp")} to="/SignUp">
+          <div onClick={() => setSignUpModal(true)}>
             <SidebarOption
               open={open}
               selected={selected === "SignUp"}
               title="Sign-Up"
               Icon={AccountBoxIcon}
             />
-          </Link>
+          </div>
           <Link onClick={() => setSelected("SignOut")} to="/SignOut">
             <SidebarOption
               open={open}
               selected={selected === "SignOut"}
               title="Sign-Out"
               Icon={ExitToAppIcon}
-            />{" "}
-          </Link>{" "}
+            />
+          </Link>
         </div>
       )}
     </div>

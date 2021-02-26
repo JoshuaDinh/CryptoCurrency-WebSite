@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/crypto/static/css/main.41f3788a.chunk.css",
+    "main.js": "/crypto/static/js/main.41f44819.chunk.js",
+    "main.js.map": "/crypto/static/js/main.41f44819.chunk.js.map",
+    "runtime-main.js": "/crypto/static/js/runtime-main.327f7d87.js",
+    "runtime-main.js.map": "/crypto/static/js/runtime-main.327f7d87.js.map",
+    "static/js/2.def92d30.chunk.js": "/crypto/static/js/2.def92d30.chunk.js",
+    "static/js/2.def92d30.chunk.js.map": "/crypto/static/js/2.def92d30.chunk.js.map",
+    "index.html": "/crypto/index.html",
+    "precache-manifest.0fb17a0b1828f65aac4ab4c075ff1473.js": "/crypto/precache-manifest.0fb17a0b1828f65aac4ab4c075ff1473.js",
+    "service-worker.js": "/crypto/service-worker.js",
+    "static/css/main.41f3788a.chunk.css.map": "/crypto/static/css/main.41f3788a.chunk.css.map",
+    "static/js/2.def92d30.chunk.js.LICENSE.txt": "/crypto/static/js/2.def92d30.chunk.js.LICENSE.txt",
+    "static/media/chart.svg": "/crypto/static/media/chart.cbbde29e.svg",
+    "static/media/linegraph.svg": "/crypto/static/media/linegraph.587d9046.svg",
+    "static/media/news.svg": "/crypto/static/media/news.45070c1d.svg",
+    "static/media/signup.svg": "/crypto/static/media/signup.737d0756.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.327f7d87.js",
+    "static/js/2.def92d30.chunk.js",
+    "static/css/main.41f3788a.chunk.css",
+    "static/js/main.41f44819.chunk.js"
+  ]
+}

@@ -221,6 +221,21 @@ button:focus {
   width: 100%;
   overflow: scroll;
 }
+/* ----------------------Signout--------------------------------------------*/
+.app__signOut {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.app__signOut-header {
+  text-align: center;
+  width: 100%;
+}
+.app__signOut-image {
+  width: 30em;
+}
 
 /* ----------------------MEDIA QUIERIES--------------------------------------------*/
 

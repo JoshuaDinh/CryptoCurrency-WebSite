@@ -4,7 +4,7 @@ import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import signup from "../../images/signup.svg";
 
-const SignUp = () => {
+const SignUp = ({ setSignUpModal }) => {
   const [viewPasswordIcon, setViewPasswordIcon] = useState(false);
   const [viewPassword] = useState(["password", "text"]);
 
@@ -14,8 +14,15 @@ const SignUp = () => {
 
   return (
     <div className="signUp">
-      <div className="signUp-bkg"></div>
       <form className="signUp__form">
+        {" "}
+        <div
+          className="signUp__form-close"
+          onClick={() => setSignUpModal(false)}
+        >
+          {" "}
+          Close
+        </div>
         <div className="signUp__title">
           <h3>Sign Up</h3>
           <img src={signup} alt="" />
@@ -24,14 +31,12 @@ const SignUp = () => {
           <label>Full Name:</label>
           <input placeholder="Full Name" type="text" />
         </div>
-
         <div className="signUp__email">
           <label>Email:</label>
           <input placeholder="Email" type="email" />
           <label style={{ fontSize: 14 }}>Verify Email*:</label>
           <input placeholder="Verify Email" type="email" />
         </div>
-
         <div className="signUp__password">
           <label onClick={() => handlePassword()}>
             Password:

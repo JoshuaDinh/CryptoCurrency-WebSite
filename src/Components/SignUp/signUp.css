@@ -1,9 +1,17 @@
 .signUp {
-  background-color: white;
-  border-radius: 40px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: rgb(245, 245, 245, 0.8);
+  z-index: 100;
 }
 
 .signUp__form {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,9 +20,19 @@
   padding: 15px;
   padding-bottom: 30px;
   border-radius: 40px;
+  background: white;
   -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.signUp__form-close {
+  z-index: 1000;
+  margin: 2% 0;
+  cursor: pointer;
+}
+.signUp__form-close:hover {
+  border-bottom: 1px solid #162336;
 }
 
 .signUp__title {

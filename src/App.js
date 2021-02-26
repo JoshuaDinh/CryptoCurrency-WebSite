@@ -15,28 +15,25 @@ import Sidebar from "../src/Components/Sidebar/Sidebar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SignUp from "./Components/SignUp/SignUp";
 import Exchanges from "./Components/Exchanges/Exchanges";
-// import Account from "./Components/Account/Account";
 import AllTimeData from "./Components/AllTimeHigh/AllTimeData";
 import linegraph from "./images/linegraph.svg";
 import news from "./images/news.svg";
 import Notifications from "./Components/Preferences/Notifications/Notifications";
 import PersonalDetails from "./Components/Profile/PersonalDetails/PersonalDetails";
-// import { Phone } from "@material-ui/icons";
 import PhoneNumbers from "./Components/Security/PhoneNumbers/PhoneNumbers";
 import TwoStepVerification from "./Components/Security/TwoStepVerification/TwoStepVerification";
 import PaymentMethods from "./Components/PaymentMethods/PaymentMethods";
 import chart from "../src/images/chart.svg";
+import logout from "./images/logout.svg";
 
 const App = () => {
   const [dataTableByMarketCap, setDataTableByMarketCap] = useState([]);
-  // const [dataTableByVolume, setDataTableByVolume] = useState([]);
   const [list, setList] = useState([]);
   const [coin, setCoin] = useState("");
   const [coinInfo, setCoinInfo] = useState([]);
   const [loading, setLoading] = useState(true);
   const [chartDays, setChartDays] = useState(7);
-  // const [coinName, setCoinName] = useState([]);
-  // const [coinPrice, setCoinPrice] = useState([]);
+  const [signUpModal, setSignUpModal] = useState(false);
 
   // Manages searched & selected coins
   const onFormSearch = (e) => {
@@ -94,14 +91,15 @@ const App = () => {
 
   return (
     <div className="App">
+      {" "}
+      {signUpModal && <SignUp setSignUpModal={setSignUpModal} />}
       <Router>
-        <Sidebar />
+        <Sidebar setSignUpModal={setSignUpModal} />
         <Switch>
           {/* <------------------------------------DASHBOARD---------------------------------------------> */}
           <Route path="/crypto">
             <div className="app__container">
               <Search list={list} coin={coin} onFormSearch={onFormSearch} />
-
               <div className="app__data">
                 <TableData
                   setCoin={onCoinSelect}
@@ -305,15 +303,17 @@ const App = () => {
           </Route>
           ;
           {/* /* <------------------------------------SignUp---------------------------------------------> */}
-          <Route path="/SignUp">
+          {/* <Route path="/SignUp">
             <div className="app__signUp">
               <SignUp />
             </div>
-          </Route>
-          ;
+          </Route> */}
           {/* /* <------------------------------------SignOut---------------------------------------------> */}
           <Route path="/SignOut">
-            <div className="app__signOut">signout</div>
+            <div className="app__signOut">
+              <h1 className="app__signOut-header">See you next time!</h1>
+              <img className="app__signOut-image" src={logout} />
+            </div>
           </Route>
           ;
           {/* /* <--------------------------------------------------------------------------------------------> */}
