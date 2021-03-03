@@ -9,7 +9,6 @@ const Settings = () => {
       <SettingsSelection selection="Preferences" path="/Preferences" />
       <SettingsSelection selection="Security" path="/Security" />
       <SettingsSelection selection="Payment Methods" path="/PaymentMethods" />
-      <SettingsSelection selection="Crypto Addresses" path="/CryptoAddresses" />
     </div>
   );
 };

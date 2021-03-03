@@ -15,12 +15,10 @@ const SignUp = ({ setSignUpModal }) => {
   return (
     <div className="signUp">
       <form className="signUp__form">
-        {" "}
         <div
           className="signUp__form-close"
           onClick={() => setSignUpModal(false)}
         >
-          {" "}
           Close
         </div>
         <div className="signUp__title">

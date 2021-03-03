@@ -91,7 +91,6 @@ const App = () => {
 
   return (
     <div className="App">
-      {" "}
       {signUpModal && <SignUp setSignUpModal={setSignUpModal} />}
       <Router>
         <Sidebar setSignUpModal={setSignUpModal} />
@@ -211,9 +210,7 @@ const App = () => {
                       />
                     ) : (
                       <div className="app__graph-loader">
-                        {/* <p>Waiting for selection..</p>
-                        <LinearProgress /> */}
-                        <img src={linegraph} alt="" />
+                        <img src={linegraph} alt="#" />
                       </div>
                     )}
                     <AllTimeData
@@ -295,13 +292,6 @@ const App = () => {
               <PaymentMethods />
             </div>
           </Route>
-          <Route path="/CryptoAddresses">
-            <div className="app__account">
-              <Settings />
-              <p>cryptoaddresses</p>
-            </div>
-          </Route>
-          ;
           {/* /* <------------------------------------SignUp---------------------------------------------> */}
           {/* <Route path="/SignUp">
             <div className="app__signUp">

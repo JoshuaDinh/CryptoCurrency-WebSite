@@ -1,8 +1,8 @@
 .signUp {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background: rgb(245, 245, 245, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
   z-index: 100;
 }
 
@@ -11,7 +11,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 35vw;
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,4 +113,31 @@
 .signUp__email > input:hover,
 .signUp__password > input:hover {
   border: 2px solid #162336;
+}
+
+@media only screen and (max-width: 1200px) {
+  .signUp__form {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .signUp__form {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .signUp__form {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 675px) {
+  .signUp__form {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .signUp__form {
+    width: 100%;
+  }
 }

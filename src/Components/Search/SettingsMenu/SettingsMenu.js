@@ -21,9 +21,6 @@ export const SettingsMenu = ({ setSettingsMenu }) => {
       <Link to="./PaymentMethods">
         <li className="settingsMenu__item">Payment Methods</li>
       </Link>
-      <Link to="./CryptoAddresses">
-        <li className="settingsMenu__item">Crypto Addresses</li>
-      </Link>
     </ul>
   );
 };

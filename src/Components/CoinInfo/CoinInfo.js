@@ -37,7 +37,6 @@ const CoinInfo = ({
             {details}
           </h2>
           <div className="coinInfo__highLow">
-            {" "}
             <p>
               {lowTitle}
               {low}

@@ -6,7 +6,6 @@ import DataUsageIcon from "@material-ui/icons/DataUsage";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import AnnouncementIcon from "@material-ui/icons/Announcement";
-// import AccountBalanceWalletIcon from "@material-ui/icons/AccountBalanceWallet";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
@@ -48,7 +47,7 @@ const Sidebar = ({ setSignUpModal }) => {
             title="Dashboard"
             Icon={HomeIcon}
           />
-        </Link>{" "}
+        </Link>
         <Link onClick={() => setSelected("News")} to="/News">
           <SidebarOption
             open={open}
@@ -89,12 +88,12 @@ const Sidebar = ({ setSignUpModal }) => {
             selected={selected === "SignOut"}
             title="Sign-Out"
             Icon={ExitToAppIcon}
-          />{" "}
+          />
         </Link>
       </div>
+
       {/* Mobile Nav */}
       <div onClick={() => openMobileNav()} className="nav__mobile">
-        {" "}
         <SidebarOption Icon={MenuIcon} />
       </div>
       {mobileNav && (
@@ -122,9 +121,8 @@ const Sidebar = ({ setSignUpModal }) => {
               title="News"
               Icon={AnnouncementIcon}
             />
-          </Link>{" "}
+          </Link>
           <Link onClick={() => setSelected("Exchanges")} to="/Exchanges">
-            {" "}
             <SidebarOption
               open={open}
               selected={selected === "Exchanges"}
@@ -140,14 +138,14 @@ const Sidebar = ({ setSignUpModal }) => {
               Icon={AccountBoxIcon}
             />
           </Link>
-          <div onClick={() => setSignUpModal(true)}>
+          <Link onClick={() => setSignUpModal(true)}>
             <SidebarOption
               open={open}
               selected={selected === "SignUp"}
               title="Sign-Up"
               Icon={AccountBoxIcon}
             />
-          </div>
+          </Link>
           <Link onClick={() => setSelected("SignOut")} to="/SignOut">
             <SidebarOption
               open={open}

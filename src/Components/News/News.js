@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { LinearProgress } from "@material-ui/core";
-
 import axios from "axios";
 import "./news.css";
 
