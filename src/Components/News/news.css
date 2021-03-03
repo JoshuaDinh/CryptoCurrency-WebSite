@@ -1,11 +1,11 @@
 .news {
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 25px;
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(5, 1fr);
   text-align: center;
-  padding: 0 15px;
+  padding: 0 3%;
 }
 
 .news__container {

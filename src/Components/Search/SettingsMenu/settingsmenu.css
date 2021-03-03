@@ -16,7 +16,9 @@
   cursor: pointer;
   border-bottom: 0.5px solid grey;
   color: #162336;
+  text-align: center;
 }
+
 .settingsMenu__item:hover,
 .settingsMenu__close-icon:hover {
   color: #d27d0d;

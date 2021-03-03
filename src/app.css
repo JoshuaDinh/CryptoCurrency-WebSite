@@ -9,8 +9,8 @@
 .App {
   display: flex;
   background-color: whitesmoke;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 input {
@@ -125,29 +125,6 @@ button:focus {
   }
 }
 
-/* ----------------------APP DATA TABLE--------------------------------------------*/
-
-.app__dataTable-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 300px;
-}
-
-.app__dataTable-chart {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.app__loadedCoin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-}
-
 /* ----------------------APP NEWS--------------------------------------------*/
 .app__news {
   width: 100%;
@@ -169,10 +146,6 @@ button:focus {
 .app__news-title > h1 {
   color: #162336;
   border-bottom: 2px solid #d27d0d;
-}
-
-.app__news > hr {
-  margin-bottom: 10px;
 }
 
 /* ----------------------APP SIGNUP--------------------------------------------*/
